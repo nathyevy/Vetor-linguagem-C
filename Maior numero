@@ -1,6 +1,7 @@
 #include <stdio.h>
-
+#include <locale.h>
 int main() {
+setlocale(LC_ALL, "Portuguese");
     int vetor[10]; // Vetor para armazenar os números inteiros
     int i, maior; // Variáveis para controle do loop e do maior valor
 
