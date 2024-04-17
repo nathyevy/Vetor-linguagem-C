@@ -2,27 +2,23 @@
 #include <locale.h>
 int main() {
 setlocale(LC_ALL, "Portuguese");
-    int vetor[10]; // Vetor para armazenar os números inteiros
-    int i, maior; // Variáveis para controle do loop e do maior valor
+    int vetor[10];
+    int i, maior; 
 
-    // Solicita e armazena os dez números inteiros no vetor
-    printf("Digite dez numeros inteiros:\n");
+printf("Digite dez numeros inteiros:\n");
     for(i = 0; i < 10; i++) {
         printf("Numero %d: ", i + 1);
         scanf("%d", &vetor[i]);
     }
 
-    // Inicializa a variável 'maior' com o primeiro elemento do vetor
     maior = vetor[0];
 
-    // Percorre o vetor para encontrar o maior valor
     for(i = 1; i < 10; i++) {
         if(vetor[i] > maior) {
             maior = vetor[i];
         }
     }
 
-    // Exibe o maior valor encontrado no vetor
     printf("O maior valor encontrado no vetor e: %d\n", maior);
 
     return 0;
